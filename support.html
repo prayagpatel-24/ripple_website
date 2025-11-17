@@ -19,7 +19,7 @@
         console.warn('Header include failed:', e);
       }
       try{
-        const fres = await fetch('footer.mtml');
+        const fres = await fetch('footer.html');
         const ftext = await fres.text();
         document.getElementById('footer-placeholder').innerHTML = ftext;
       }catch(e){
